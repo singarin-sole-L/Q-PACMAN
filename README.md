@@ -53,25 +53,26 @@ Each method is trained and compared through:
 
 ## 🧠 Key Results
 
-| Method | Static Env. | Noisy Env. | Dynamic Env. | Training Time | Win-rate |
-|:-------|:------------:|:-----------:|:-------------:|:--------------:|:----------:|
-| Q-learning | ✅ Fast convergence | ❌ Sensitive | ⚠️ Poor generalization | ⚡ Fast | 85–100% |
-| SARSA | ⚙️ Slower convergence | ❌ Sensitive | ⚠️ Unstable | ⚡ Fast | 78–100% |
-| MCTS | ⚙️ Planning-based | ⚠️ Reward-dependent | ❌ Unstable | 🕒 Long | 70–95% |
-| DQN | ✅ Robust | ✅ Stable | ✅ Scalable | 🧠 Moderate | 90–100% |
+| Method | Static Env. | Noisy Env. | Dynamic Env. | Training Time | 
+|:-------|:------------:|:-----------:|:-------------:|:--------------:|
+| Q-learning | ✅ Fast convergence | ❌ Sensitive | ⚠️ Poor generalization | ⚡ Fast | 
+| SARSA | ⚙️ Slower convergence | ❌ Sensitive | ⚠️ Unstable | ⚡ Fast | 
+| MCTS | ⚙️ Planning-based | ⚠️ Reward-dependent | ❌ Unstable | 🕒 Long | 
+| DQN | ✅ Robust | ✅ Stable | ✅ Scalable | 🧠 Moderate | 
 
 ---
 
 ## 🎯 Example Visuals
 
 ### Agent Behavior for DQN (10×10, two ghosts) 
-<img width="800" height="800" alt="optimal_path_found_by_DQN" src="https://github.com/user-attachments/assets/ac4a22e8-a7f9-4576-b109-b66bdfb26e90" />
+<img width="400" height="400" alt="optimal_path_found_by_DQN" src="https://github.com/user-attachments/assets/ac4a22e8-a7f9-4576-b109-b66bdfb26e90" />
 
 ### Comparison reward evolution in a deterministic environment
-<img width="1440" height="800" alt="overlay_base" src="https://github.com/user-attachments/assets/a845e594-8ae2-4bff-ad6a-f39abb13907e" />
+<img width="720" height="400" alt="overlay_base" src="https://github.com/user-attachments/assets/a845e594-8ae2-4bff-ad6a-f39abb13907e" />
 
 ### Comparison reward evolution in a stochastic environment
-<img width="1440" height="800" alt="overlay_dyn_0 2" src="https://github.com/user-attachments/assets/61518dcb-5179-497a-8048-b3392341159c" />
+<img width="720" height="400" alt="overlay_dyn_0 2" src="https://github.com/user-attachments/assets/61518dcb-5179-497a-8048-b3392341159c" />
+
 ---
 ## ⚙️ Usage
 
