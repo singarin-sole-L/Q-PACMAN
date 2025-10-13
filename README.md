@@ -57,7 +57,7 @@ Each method is trained and compared through:
 |:-------|:------------:|:-----------:|:-------------:|:--------------:|
 | Q-learning | ✅ Fast convergence | ❌ Sensitive | ⚠️ Poor generalization | ⚡ Fast | 
 | SARSA | ⚙️ Slower convergence | ❌ Sensitive | ⚠️ Unstable | ⚡ Fast | 
-| MCTS | ⚙️ Planning-based | ⚠️ Reward-dependent | ❌ Unstable | 🕒 Long | 
+| MCTS | ⚙️ Planning-based | ⚠️ Reward-dependent | ❌ Unstable | None but slow "inference"| 
 | DQN | ✅ Robust | ✅ Stable | ✅ Scalable | 🧠 Moderate | 
 
 ---
@@ -114,7 +114,5 @@ could provide deeper insight into the scalability and generalization of each alg
 
 ## 🧑‍💻 Author
 
-**SINGARIN-SOLE Livio**  
-Master in Artificial Intelligence and Data Science  
-Jean Monnet University, Saint-Étienne, France  
+**SINGARIN-SOLE Livio**   
 October 2025
