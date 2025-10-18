@@ -3,12 +3,11 @@
 This project explores and compares several **Reinforcement Learning (RL)** and **planning** algorithms applied to a simplified version of the classic **Pacman** game.  
 The objective is simple: Pacman must reach the dot to win, while avoiding ghosts in a dynamic, noisy gridworld.
 
-The full study, results, and detailed analysis are presented in the report  
-👉 **[`report.pdf`](./report.pdf)** (recommended read).
+The full study, results, and detailed analysis are presented in the report **[`report.pdf`](./report.pdf)** (recommended read).
 
 ---
 
-## 📘 Overview
+## Overview
 
 The environment is a 10×10 grid with customizable parameters:
 - Random starting positions  
@@ -30,7 +29,7 @@ Each method is trained and compared through:
 
 ---
 
-## 🧩 Project Structure
+## Project Structure
 
 ```
 ├── src/
@@ -51,18 +50,18 @@ Each method is trained and compared through:
 
 ---
 
-## 🧠 Key Results
+## Key Results
 
-| Method | Static Env. | Noisy Env. | Dynamic Env. | Training Time | 
-|:-------|:------------:|:-----------:|:-------------:|:--------------:|
-| Q-learning | ✅ Fast convergence | ❌ Sensitive | ⚠️ Poor generalization | ⚡ Fast | 
-| SARSA | ⚙️ Slower convergence | ❌ Sensitive | ⚠️ Unstable | ⚡ Fast | 
-| MCTS | ⚙️ Planning-based | ⚠️ Reward-dependent | ❌ Unstable | None but slow "inference"| 
-| DQN | ✅ Robust | ✅ Stable | ✅ Scalable | 🧠 Moderate | 
+| Method | Static Env. | Noisy Env. | Dynamic Env. | Training Time | Inference Time |
+|:-------|:------------:|:-----------:|:-------------:|:--------------:|:--------------:|
+| Q-learning | ✅ Fast convergence | ❌ Sensitive | ⚠️ Poor generalization | ⚡ Fast | ⚡⚡ very Fast 
+| SARSA | ⚙️ Slower convergence | ❌ Sensitive | ⚠️ Unstable | ⚡ Fast | ⚡⚡ very Fast 
+| MCTS | ⚙️ Planning-based | ⚠️ Reward-dependent | ❌ Unstable | None | ⚙️ Moderate
+| DQN | ✅ Robust | ✅ Stable | ✅ Scalable | ⚙️ Moderate | ⚡ Fast | ⚡⚡ very Fast 
 
 ---
 
-## 🎯 Example Visuals
+## Example Visuals
 
 ### Agent Behavior for DQN (10×10, two ghosts) 
 <img width="400" height="400" alt="optimal_path_found_by_DQN" src="https://github.com/user-attachments/assets/ac4a22e8-a7f9-4576-b109-b66bdfb26e90" />
@@ -74,7 +73,7 @@ Each method is trained and compared through:
 <img width="720" height="400" alt="overlay_dyn_0 2" src="https://github.com/user-attachments/assets/61518dcb-5179-497a-8048-b3392341159c" />
 
 ---
-## ⚙️ Usage
+## Usage
 
 ### 1. Clone the repository
 ```bash
@@ -96,7 +95,7 @@ You can modify grid parameters and environment behavior directly inside the note
 
 ---
 
-## 🧾 Notes
+## Notes
 
 - The DQN implementation follows a PyTorch-style structure inspired by the official [Reinforcement Q-learning Tutorial](https://pytorch.org/tutorials/intermediate/reinforcement_q_learning.html).  
 - MCTS performance strongly depends on **reward configuration** (step cost, dot reward, ghost penalty).  
@@ -105,14 +104,14 @@ You can modify grid parameters and environment behavior directly inside the note
 
 ---
 
-## 🚀 Future Work
+## Future Work
 
 Extending this study to larger or continuous environments, with more complex dynamics (multiple ghosts, stochastic rewards),  
 could provide deeper insight into the scalability and generalization of each algorithm.
 
 ---
 
-## 🧑‍💻 Author
+## Author
 
 **SINGARIN-SOLE Livio**   
 October 2025
